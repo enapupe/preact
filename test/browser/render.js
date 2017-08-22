@@ -3,7 +3,7 @@
 import { h, render, Component } from '../../src/preact';
 /** @jsx h */
 
-function getAttributes(node) {
+export function getAttributes(node) {
 	let attrs = {};
 	for (let i=node.attributes.length; i--; ) {
 		attrs[node.attributes[i].name] = node.attributes[i].value;
